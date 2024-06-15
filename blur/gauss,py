@@ -1,0 +1,9 @@
+import cv2 as cv
+
+img=cv.imread('dog.jpg')
+cv.imshow('img',img)
+
+gauss=cv.GaussianBlur(img,(3,3),0 )
+cv.imshow('blur',gauss)
+
+cv.waitKey(0)
